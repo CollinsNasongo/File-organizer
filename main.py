@@ -198,8 +198,9 @@ def choice_window():
     
     
     
-    tkinter.Button(choice_page, text = "select",background ='green',command = checker ).pack()
-    tkinter.Button(choice_page, text = "quit",background ='red',command = main.destroy ).pack()
+    tkinter.Button(choice_page, text = "Select",background ='green',command = checker ).pack()
+    
+    tkinter.Button(choice_page, text = "Quit",background ='red',command = choice_page.destroy).pack()
     
 
 
@@ -209,7 +210,7 @@ main.title("Folder Organiser")
 main.geometry('500x300')
 
 #creating buttons
-Down = tkinter.Button(main, text = "Downloads", font = ('calibri',10,'bold'),background ='blue', command = lambda:[get_to_downloads(),choice_window(),main.destroy()])
+Down = tkinter.Button(main, text = "Downloads", font = ('calibri',10,'bold'),background ='blue', command = lambda:[get_to_downloads(),choice_window()])
 Down.grid(row = 0, column = 3, pady = 20,padx = 200)
 Docu = tkinter.Button(main, text = "Documents", font = ('calibri',10,'bold'),background ='blue', command = lambda:[get_to_documents(),choice_window()])
 Docu.grid(row = 1, column = 3, pady = 20)
