@@ -9,6 +9,10 @@ def get_to_home_folder(folder_name):
     locate = os.chdir(folder_path)
     return locate
 
+# get to a specific folder in home directory
+def get_to_test_folder():
+    return os.chdir("downloads")
+
 # get files present in a folder
 def get_files():
     dir_path = os.getcwd()
