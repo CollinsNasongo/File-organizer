@@ -2,7 +2,7 @@
 ***
 ## Introduction
 * My downloads folder was so disorganized
-* There is need to build an automatic file organizer
+* I felt a need to build an automatic file organizer
 ***
 ## Working
 1. Navigate to folder
