@@ -30,4 +30,8 @@ def main():
 
 if __name__ == "__main__":
     get_to_test_folder()
+    print("###### Before organizing ##########\n")
+    create()
     main()
+    print("###### After organizing ##########\n")
+    create()
