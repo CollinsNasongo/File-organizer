@@ -12,3 +12,6 @@
 ## Testing
 1. Currently I am using the downloads folder to test my program
 2. Add different file types to the downloads folder and run the main function to test the program
+
+## GUI
+Coming soon!
