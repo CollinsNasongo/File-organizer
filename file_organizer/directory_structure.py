@@ -66,7 +66,6 @@ def display(obj):
 
 # creates the tree stucture using files and folders present
 def create():
-    get_to_test_folder()
     path = os.path.basename(os.getcwd())
     root = FS_object(path)
 

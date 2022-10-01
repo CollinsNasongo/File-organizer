@@ -3,9 +3,10 @@
 
 import os
 from pathlib import Path
+import shutil
 
 # get to a specific folder in home directory
-def get_to_home_folder(folder_name):
+def get_to_home_folder(folder_name = "Downloads"):
     folder_path = str(Path.home() / folder_name)
     locate = os.chdir(folder_path)
     return locate
@@ -23,6 +24,13 @@ def get_files():
             file_list.append(path)
     return file_list
 
+# Getting file extension
+def get_extension(file_name):
+    file_string = file_name.split('.')
+    if len(file_string) != 2:
+        return "none"
+    return file_string[1]
+
 # get directories present in a folder
 def get_dirs():
     dir_path = os.getcwd()
@@ -35,7 +43,7 @@ def get_dirs():
 
 
 # make a directory (Avoiding the file exists error)
-def make_a_folder(folder_name):
+def make_folder(folder_name):
     dir_path = os.getcwd()
     path = os.path.join(dir_path, folder_name)
 
